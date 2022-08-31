@@ -1,5 +1,5 @@
 # Lilach
-Flowers Shop Application , SW Engineering Project, 2021-2022, University of Haifa.
+SW Engineering Project, 2021-2022, University of Haifa . 
 
 
 ## Structure
