@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: cornsilk;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="il.cshaifasweng.OCSFMediatorExample.client.ManageStoreController">
+   <children>
+      <Text fx:id="storeML" fill="#b91b1b" layoutX="163.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: linear-gradient linear-gradient; -fx-font-weight: bold; -fx-font-style: oblique; -fx-font-size: 40px;" text="Store Manager" textAlignment="CENTER" />
+      <Button fx:id="userName" layoutX="10.0" layoutY="70.0" mnemonicParsing="false" onAction="#getDetails" style="-fx-background-color: linear-gradient(#ff5400, #be1d00); -fx-background-insets: 0,1,2; -fx-background-radius: 3,2,1; -fx-text-fill: white; -fx-font-size: 15px; -fx-font-weight: bold;" />
+      <Button fx:id="incomeBtn" layoutX="238.0" layoutY="110.0" mnemonicParsing="false" onAction="#incomeFunc" style="-fx-background-color: linear-gradient(#ff5400, #be1d00); -fx-background-insets: 0,1,2; -fx-background-radius: 3,2,1; -fx-text-fill: white; -fx-font-size: 15px; -fx-font-weight: bold;" text="Income Report" />
+      <Button fx:id="ordersBtn" layoutX="240.0" layoutY="180.0" mnemonicParsing="false" onAction="#ordersFunc" style="-fx-background-color: linear-gradient(#ff5400, #be1d00); -fx-background-insets: 0,1,2; -fx-background-radius: 3,2,1; -fx-text-fill: white; -fx-font-size: 15px; -fx-font-weight: bold;" text="Orders Report" />
+      <Button fx:id="complaintBtn" layoutX="220.0" layoutY="250.0" mnemonicParsing="false" onAction="#compFunc" style="-fx-background-color: linear-gradient(#ff5400, #be1d00); -fx-background-insets: 0,1,2; -fx-background-radius: 3,2,1; -fx-text-fill: white; -fx-font-size: 15px; -fx-font-weight: bold;" text="Complaints Reports" />
+   </children>
+</AnchorPane>

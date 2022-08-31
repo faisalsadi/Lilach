@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: cornsilk;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="il.cshaifasweng.OCSFMediatorExample.client.UpdateFlowerEmployeeController">
+   <children>
+      <Text fx:id="updateL" fill="#b91b1b" layoutX="164.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: linear-gradient; -fx-font-weight: bold; -fx-font-style: oblique; -fx-font-size: 40px;" text="Update Flower" />
+      <Button fx:id="userName" layoutX="10.0" layoutY="70.0" mnemonicParsing="false" onAction="#getDetails" style="-fx-background-color: linear-gradient(#ff5400, #be1d00); -fx-background-insets: 0,1,2; -fx-background-radius: 3,2,1; -fx-text-fill: white; -fx-font-size: 15px; -fx-font-weight: bold;" />
+      <Label fx:id="LableName" layoutX="21.0" layoutY="110.0" style="-fx-text-fill: linear-gradient(#ff5400, #be1d00); -fx-font-weight: bold; -fx-font-style: italic; -fx-font-size: 15px;" text="Name:" />
+      <TextField fx:id="textName" layoutX="127.0" layoutY="110.0" />
+      <Label fx:id="labelDescription" layoutX="21.0" layoutY="150.0" style="-fx-text-fill: linear-gradient(#ff5400, #be1d00); -fx-font-weight: bold; -fx-font-style: italic; -fx-font-size: 15px;" text="Description:" />
+      <TextField fx:id="textDescription" layoutX="127.0" layoutY="150.0" />
+      <Label fx:id="labelType" layoutX="21.0" layoutY="190.0" style="-fx-text-fill: linear-gradient(#ff5400, #be1d00); -fx-font-weight: bold; -fx-font-style: italic; -fx-font-size: 15px;" text="Type:" />
+      <ComboBox fx:id="chooseType" layoutX="127.0" layoutY="190.0" prefWidth="150.0" />
+      <Label fx:id="labelImage" layoutX="21.0" layoutY="230.0" style="-fx-text-fill: linear-gradient(#ff5400, #be1d00); -fx-font-weight: bold; -fx-font-style: italic; -fx-font-size: 15px;" text="Image:" />
+      <ComboBox fx:id="chooseImage" layoutX="127.0" layoutY="230.0" prefWidth="150.0" />
+      <Label fx:id="labelColor" layoutX="21.0" layoutY="270.0" style="-fx-text-fill: linear-gradient(#ff5400, #be1d00); -fx-font-weight: bold; -fx-font-style: italic; -fx-font-size: 15px;" text="Color:" />
+      <ComboBox fx:id="chooseColor" layoutX="127.0" layoutY="270.0" prefWidth="150.0" />
+      <Label fx:id="labelPrice" layoutX="300.0" layoutY="110.0" style="-fx-text-fill: linear-gradient(#ff5400, #be1d00); -fx-font-weight: bold; -fx-font-style: italic; -fx-font-size: 15px;" text="Price:" />
+      <TextField fx:id="textPrice" layoutX="421.0" layoutY="110.0" />
+      <Label fx:id="labelSerial" layoutX="300.0" layoutY="150.0" style="-fx-text-fill: linear-gradient(#ff5400, #be1d00); -fx-font-weight: bold; -fx-font-style: italic; -fx-font-size: 15px;" text="Serial Number: " />
+      <Label fx:id="textSerial" layoutX="425.0" layoutY="150.0" style="-fx-text-fill: linear-gradient(#ff5400, #be1d00); -fx-font-weight: bold; -fx-font-style: italic; -fx-font-size: 15px;" />
+      <Label fx:id="labelStatus" layoutX="300.0" layoutY="190.0" style="-fx-text-fill: linear-gradient(#ff5400, #be1d00); -fx-font-weight: bold; -fx-font-style: italic; -fx-font-size: 15px;" text="Status:" />
+      <ComboBox fx:id="chooseStatus" layoutX="425.0" layoutY="190.0" prefWidth="150.0" />
+      <Label fx:id="labelSale" layoutX="300.0" layoutY="230.0" style="-fx-text-fill: linear-gradient(#ff5400, #be1d00); -fx-font-weight: bold; -fx-font-style: italic; -fx-font-size: 15px;" text="Sale:" />
+      <ComboBox fx:id="ChooseSale" layoutX="425.0" layoutY="230.0" prefWidth="150.0" />
+      <Label fx:id="labelDiscount" layoutX="300.0" layoutY="270.0" style="-fx-text-fill: linear-gradient(#ff5400, #be1d00); -fx-font-weight: bold; -fx-font-style: italic; -fx-font-size: 15px;" text="Discount:" />
+      <TextField fx:id="textDiscount" layoutX="425.0" layoutY="270.0" />
+      <Button fx:id="backBtn" layoutX="193.0" layoutY="330.0" mnemonicParsing="false" onAction="#returnBtn" style="-fx-background-color: linear-gradient(#ff5400, #be1d00); -fx-background-insets: 0,1,2; -fx-background-radius: 3,2,1; -fx-text-fill: white; -fx-font-size: 15px; -fx-font-weight: bold;" text="Back" />
+      <Button fx:id="updateBtn" layoutX="270.0" layoutY="330.0" mnemonicParsing="false" onAction="#addDetails" style="-fx-background-color: linear-gradient(#ff5400, #be1d00); -fx-background-insets: 0,1,2; -fx-background-radius: 3,2,1; -fx-text-fill: white; -fx-font-size: 15px; -fx-font-weight: bold;" />
+      <Button fx:id="cancelBtn" layoutX="360.0" layoutY="330.0" mnemonicParsing="false" onAction="#cancelBtn" style="-fx-background-color: linear-gradient(#ff5400, #be1d00); -fx-background-insets: 0,1,2; -fx-background-radius: 3,2,1; -fx-text-fill: white; -fx-font-size: 15px; -fx-font-weight: bold;" text="Cancel" />
+   </children>
+</AnchorPane>

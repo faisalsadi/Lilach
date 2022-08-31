@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: cornsilk;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="il.cshaifasweng.OCSFMediatorExample.client.MyOrdersBoundaryController">
+    <children>
+      <Text fx:id="myOrdersL" fill="#b91b1b" layoutX="205.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: linear-gradient linear-gradient; -fx-font-weight: bold; -fx-font-style: oblique; -fx-font-size: 40px;" text="My Orders" textAlignment="CENTER" />
+      <Button fx:id="userName" layoutX="10.0" layoutY="13.0" mnemonicParsing="false" onAction="#getDetails" style="-fx-background-color: linear-gradient(#ff5400, #be1d00); -fx-background-insets: 0,1,2; -fx-background-radius: 3,2,1; -fx-text-fill: white; -fx-font-size: 15px; -fx-font-weight: bold;" />
+        <TableView fx:id="tableView" layoutX="40.0" layoutY="80.0" prefHeight="270.0" prefWidth="520.0">
+            <columns>
+                <TableColumn fx:id="orderN" minWidth="0.0" prefWidth="88.0" text="Order Number" />
+                <TableColumn fx:id="orderDate" prefWidth="108.0" text="Order Date" />
+                <TableColumn fx:id="orderP" prefWidth="108.0" text="Order Price" />
+                <TableColumn fx:id="orderD" prefWidth="108.0" text="Order Description" />
+                <TableColumn fx:id="orderS" prefWidth="108.0" text="Order Status" />
+            </columns>
+        </TableView>
+      <Button fx:id="returnBtn" layoutX="266.0" layoutY="360.0" mnemonicParsing="false" onAction="#backBtn" style="-fx-background-color: linear-gradient(#ff5400, #be1d00); -fx-background-insets: 0,1,2; -fx-background-radius: 3,2,1; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 15px;" text="Return" />
+    </children>
+
+</AnchorPane>

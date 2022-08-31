@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: cornsilk;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="il.cshaifasweng.OCSFMediatorExample.client.ChangeAuthorizationChainBoundaryController">
+   <children>
+      <Text fx:id="title" fill="#b91b1b" layoutX="164.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: linear-gradient linear-gradient; -fx-font-weight: bold; -fx-font-style: oblique; -fx-font-size: 40px;" text="Authorization:" textAlignment="CENTER" />
+      <Button fx:id="userName" layoutX="10.0" layoutY="65.0" mnemonicParsing="false" onAction="#getDetails" style="-fx-background-color: linear-gradient(#ff5400, #be1d00); -fx-background-insets: 0,1,2; -fx-background-radius: 3,2,1; -fx-text-fill: white; -fx-font-size: 15px; -fx-font-weight: bold;" />
+      <Button fx:id="returnBtn" layoutX="515.0" layoutY="65.0" mnemonicParsing="false" onAction="#returnBtn" style="-fx-background-color: linear-gradient(#ff5400, #be1d00); -fx-background-insets: 0,1,2; -fx-background-radius: 3,2,1; -fx-text-fill: white; -fx-font-size: 15px; -fx-font-weight: bold;" text="Return" />
+      <Label fx:id="userL" layoutX="50.0" layoutY="110.0" prefHeight="21.0" prefWidth="56.0" style="-fx-text-fill: linear-gradient(#ff5400, #be1d00); -fx-font-weight: bold; -fx-font-style: italic; -fx-font-size: 15px;" text="Users:" />
+      <TableView fx:id="tableUser" layoutY="140.0" prefHeight="210.0" prefWidth="190.0">
+         <columns>
+            <TableColumn fx:id="name1" prefWidth="93.0" text="Name" />
+            <TableColumn fx:id="status1" prefWidth="93.0" text="Status" />
+         </columns>
+      </TableView>
+      <Button fx:id="changeU" layoutX="50.0" layoutY="360.0" mnemonicParsing="false" onAction="#changeU" style="-fx-background-color: linear-gradient(#ff5400, #be1d00); -fx-background-insets: 0,1,2; -fx-background-radius: 3,2,1; -fx-text-fill: white; -fx-font-size: 15px; -fx-font-weight: bold;" text="Change Users" />
+      <Label fx:id="employeeL" layoutX="250.0" layoutY="110.0" prefHeight="21.0" prefWidth="87.0" style="-fx-text-fill: linear-gradient(#ff5400, #be1d00); -fx-font-weight: bold; -fx-font-style: italic; -fx-font-size: 15px;" text="Employees:" />
+      <TableView fx:id="tableEmployee" layoutX="210.0" layoutY="140.0" prefHeight="210.0" prefWidth="190.0">
+         <columns>
+            <TableColumn fx:id="name2" prefWidth="93.0" text="Name" />
+            <TableColumn fx:id="status2" prefWidth="93.0" text="Status" />
+         </columns>
+      </TableView>
+      <Button fx:id="changeEmployee" layoutX="240.0" layoutY="360.0" mnemonicParsing="false" onAction="#changeE" style="-fx-background-color: linear-gradient(#ff5400, #be1d00); -fx-background-insets: 0,1,2; -fx-background-radius: 3,2,1; -fx-text-fill: white; -fx-font-size: 15px; -fx-font-weight: bold;" text="Change Employees" />
+      <Label fx:id="managerL" layoutX="450.0" layoutY="110.0" prefHeight="21.0" prefWidth="87.0" style="-fx-text-fill: linear-gradient(#ff5400, #be1d00); -fx-font-weight: bold; -fx-font-style: italic; -fx-font-size: 15px;" text="Managers:" />
+      <TableView fx:id="tableManager" layoutX="410.0" layoutY="140.0" prefHeight="210.0" prefWidth="190.0">
+         <columns>
+            <TableColumn fx:id="name3" prefWidth="93.0" text="Name" />
+            <TableColumn fx:id="status3" prefWidth="93.0" text="Status" />
+         </columns>
+      </TableView>
+      <Button fx:id="changeManager" layoutX="440.0" layoutY="360.0" mnemonicParsing="false" onAction="#changeM" style="-fx-background-color: linear-gradient(#ff5400, #be1d00); -fx-background-insets: 0,1,2; -fx-background-radius: 3,2,1; -fx-text-fill: white; -fx-font-size: 15px; -fx-font-weight: bold;" text="Change Managers" />
+   </children>
+</AnchorPane>

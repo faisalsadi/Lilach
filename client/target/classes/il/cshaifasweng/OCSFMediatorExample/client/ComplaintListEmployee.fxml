@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: cornsilk;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="il.cshaifasweng.OCSFMediatorExample.client.ComplaintListEmployeeController">
+   <children>
+      <Text fx:id="complaintListL" fill="#b91b1b" layoutX="173.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: linear-gradient linear-gradient; -fx-font-weight: bold; -fx-font-style: oblique; -fx-font-size: 40px;" text="Complaint List" textAlignment="CENTER" />
+      <Button fx:id="userName" layoutX="10.0" layoutY="70.0" mnemonicParsing="false" onAction="#getDetails" style="-fx-background-color: linear-gradient(#ff5400, #be1d00); -fx-background-insets: 0,1,2; -fx-background-radius: 3,2,1; -fx-text-fill: white; -fx-font-size: 15px; -fx-font-weight: bold;" />
+      <TableView fx:id="tableView" layoutX="115.0" layoutY="110.0" prefHeight="240.0" prefWidth="370.0">
+         <columns>
+            <TableColumn fx:id="userID" minWidth="0.0" prefWidth="120.0" text="User ID" />
+            <TableColumn fx:id="orderN" prefWidth="120.0" text="Order Number" />
+            <TableColumn fx:id="complaintDate" prefWidth="120.0" text="Complaint Date" />
+         </columns>
+      </TableView>
+      <Button fx:id="returnBtn" layoutX="209.0" layoutY="360.0" mnemonicParsing="false" onAction="#returnFunc" style="-fx-background-color: linear-gradient(#ff5400, #be1d00); -fx-background-insets: 0,1,2; -fx-background-radius: 3,2,1; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 15px;" text="Return" />
+      <Button fx:id="viewCBtn" layoutX="309.0" layoutY="360.0" mnemonicParsing="false" onAction="#clickItem" style="-fx-background-color: linear-gradient(#ff5400, #be1d00); -fx-background-insets: 0,1,2; -fx-background-radius: 3,2,1; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 15px;" text="View Complaint" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: cornsilk;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="il.cshaifasweng.OCSFMediatorExample.client.SingleComplaintEmployeeController">
+   <children>
+      <Text fx:id="complaintL" fill="#b91818" layoutX="201.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 40px; -fx-fill: linear-gradient; -fx-font-weight: bold; -fx-font-style: oblique;" text="Complaint" />
+      <Button fx:id="userName" layoutX="10.0" layoutY="13.0" mnemonicParsing="false" onAction="#getDetails" style="-fx-background-color: linear-gradient(#ff5400, #be1d00); -fx-background-insets: 0,1,2; -fx-background-radius: 3,2,1; -fx-text-fill: white; -fx-font-size: 15px; -fx-font-weight: bold;" />
+      <Label fx:id="orderNL" layoutX="50.0" layoutY="70.0" style="-fx-text-fill: linear-gradient(#ff5400, #be1d00); -fx-font-weight: bold; -fx-font-style: italic; -fx-font-size: 15px;" text="Order Number:" />
+      <TextField fx:id="orderNumberTF" layoutX="160.0" layoutY="70.0" />
+      <Label fx:id="userIDL" layoutX="320.0" layoutY="70.0" style="-fx-text-fill: linear-gradient(#ff5400, #be1d00); -fx-font-weight: bold; -fx-font-style: italic; -fx-font-size: 15px;" text="User ID:" />
+      <TextField fx:id="userIDTF" layoutX="380.0" layoutY="70.0" />
+      <Label fx:id="messageL" layoutX="50.0" layoutY="100.0" style="-fx-text-fill: linear-gradient(#ff5400, #be1d00); -fx-font-weight: bold; -fx-font-style: italic; -fx-font-size: 15px;" text="Content:" />
+      <TextArea fx:id="complaintTF" layoutX="100.0" layoutY="120.0" prefHeight="160.0" prefWidth="400.0" />
+      <Label fx:id="chooseRl" layoutX="50.0" layoutY="300.0" style="-fx-text-fill: linear-gradient(#ff5400, #be1d00); -fx-font-weight: bold; -fx-font-style: italic; -fx-font-size: 15px;" text="Choose Refund:" />
+      <ComboBox fx:id="chooseRefund" layoutX="170.0" layoutY="300.0" prefWidth="150.0" />
+      <Button fx:id="cancelBtn" layoutX="208.0" layoutY="340.0" mnemonicParsing="false" onAction="#returnFunc" style="-fx-background-color: linear-gradient(#ff5400, #be1d00); -fx-background-insets: 0,1,2; -fx-background-radius: 3,2,1; -fx-text-fill: white; -fx-font-size: 15px; -fx-font-weight: bold;" text="Cancel" />
+      <Button fx:id="sendBtn" layoutX="354.0" layoutY="340.0" mnemonicParsing="false" onAction="#sendFunc" style="-fx-background-color: linear-gradient(#ff5400, #be1d00); -fx-background-insets: 0,1,2; -fx-background-radius: 3,2,1; -fx-text-fill: white; -fx-font-size: 15px; -fx-font-weight: bold;" text="Send" />
+   </children>
+</AnchorPane>
